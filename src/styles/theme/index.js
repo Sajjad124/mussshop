@@ -26,7 +26,7 @@ export const Colors = {
 const theme = createTheme({
   palette: {
     primary: {
-      main: Colors.primary,
+      main: Colors.secondary,
     },
     secondary: {
       main: Colors.secondary,
