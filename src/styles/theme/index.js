@@ -1,8 +1,8 @@
 import { createTheme } from "@mui/material/styles";
 
 export const Colors = {
-  pink: "#f2c3e",
-  secondary: "#d1adcc",
+  primary: "#f2c3e",
+  secondary: "#4d073c",
   success: "#4CAF50",
   info: "#00a2ff",
   danger: "#ff5722",
@@ -30,6 +30,14 @@ const theme = createTheme({
     },
     secondary: {
       main: Colors.secondary,
+    },
+  },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableRipple: true,
+        disableElevation: true,
+      },
     },
   },
 });
