@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 export const Colors = {
-  primary: "#f2c3e",
+  primary: "#4d073c",
   secondary: "#4d073c",
   success: "#4CAF50",
   info: "#00a2ff",
@@ -26,7 +26,7 @@ export const Colors = {
 const theme = createTheme({
   palette: {
     primary: {
-      main: Colors.secondary,
+      main: Colors.primary,
     },
     secondary: {
       main: Colors.secondary,
