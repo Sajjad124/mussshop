@@ -22,7 +22,7 @@ function App() {
         searchbox
         appdrawer
      */}
-        <Button variant="contained">Hello</Button>
+        {/* <Button variant="contained">Hello</Button> */}
       </Container>
     </ThemeProvider>
   );

@@ -1,7 +1,6 @@
 import { Box, Typography, styled, List } from "@mui/material";
 import { Colors } from "../theme";
 import "@fontsource/montez";
-import { type } from "@testing-library/user-event/dist/type";
 
 // container
 export const AppBarContainer = styled(Box)({
@@ -26,4 +25,20 @@ export const MyList = styled(List)(({ type }) => ({
   flexGrow: 3,
   justifyContent: "center",
   alignItems: "center",
+}));
+
+export const ActionIconsContainerDesktop = styled(Box)(() => ({
+  flexGrow: 0,
+}));
+export const ActionIconsContainerMobile = styled(Box)(() => ({
+  display: "flex",
+  background: Colors.shaft,
+  postion: "fixed",
+  bottom: -10,
+  left: 0,
+  // marginTop: "200px",
+  width: "100%",
+  alignItems: "center",
+  zIndex: 99,
+  borderTop: "1px solid ${Colors.border}",
 }));
