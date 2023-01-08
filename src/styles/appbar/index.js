@@ -1,7 +1,7 @@
-
-import { Box, Typography, styled } from "@mui/material";
+import { Box, Typography, styled, List } from "@mui/material";
 import { Colors } from "../theme";
 import "@fontsource/montez";
+import { type } from "@testing-library/user-event/dist/type";
 
 // container
 export const AppBarContainer = styled(Box)({
@@ -19,4 +19,11 @@ export const AppBarHeader = styled(Typography)(() => ({
   fontSize: "4em",
   fontFamily: '"Montez", "cursive"',
   color: Colors.secondary,
+}));
+
+export const MyList = styled(List)(({ type }) => ({
+  display: type === "row" ? "flex" : "block",
+  flexGrow: 3,
+  justifyContent: "center",
+  alignItems: "center",
 }));
