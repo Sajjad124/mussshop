@@ -14,14 +14,16 @@ const Banner = () => {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <BannerContainer>
-      {/* <BannerImage src="images/banner/new-bag.jpg" /> */}
+      <BannerImage src="images/banner/new-bag.jpg" />
       <BannerContent>
         <Typography variant="h6">Huge Collection</Typography>
         <BannerTitle variant="h2">New Bag</BannerTitle>
-        <BannerDescription variant="subtitle">
-          sakjgfajshgfkhasgfjhasgfkjgaslkjgfasjkfhssk
-          jsdkjfvjdskjdsfjvdjfkfhjshbdvfsvfdjfvbfdfsakjg fajshgfkhasgfjhasgfkj
-        </BannerDescription>
+        {/* <BannerDescription variant="subtitle">
+          <Typography>
+            sakjgfajshgfkhasgfjhasgfkjgaslkjgfasjkfhss
+            jsdkjfvjdskjdsfjvdjfkfhjshbdvfsvfdjfvbfdfsakjgfajshgfkhasgfjhasgfkj
+          </Typography>
+        </BannerDescription> */}
       </BannerContent>
     </BannerContainer>
   );
