@@ -2,6 +2,7 @@ import { ThemeProvider } from "@mui/material";
 import { Button, Container } from "@mui/material";
 import { useEffect } from "react";
 import AppBar from "./components/appbar";
+import Banner from "./components/banner";
 import theme from "./styles/theme";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl" sx={{ background: "#fff" }}>
         <AppBar />
+        <Banner />
         {/* 
         
         Banner
