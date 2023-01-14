@@ -20,7 +20,7 @@ const Actions = ({ matches }) => {
             sx={{
               display: "flex",
               justifyContent: "center",
-              color: matches && "white",
+              color: matches && Colors.secondary,
             }}
           >
             <ShoppingCart />
@@ -28,13 +28,25 @@ const Actions = ({ matches }) => {
         </ListItemButton>
         <Divider orientation="vertical" flexItem />
         <ListItemButton sx={{ justifyContent: "center" }}>
-          <ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
+          <ListItemIcon
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              color: matches && Colors.secondary,
+            }}
+          >
             <Favorite />
           </ListItemIcon>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />
         <ListItemButton sx={{ justifyContent: "center" }}>
-          <ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
+          <ListItemIcon
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              color: matches && Colors.secondary,
+            }}
+          >
             <Person />
           </ListItemIcon>
         </ListItemButton>
