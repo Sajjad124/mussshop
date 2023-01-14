@@ -16,7 +16,7 @@ function AppBarMobile({ matches }) {
       <IconButton>
         <Search />
       </IconButton>
-      {/* <Actions matches={matches} /> */}
+      <Actions matches={matches} />
     </AppBarContainer>
   );
 }

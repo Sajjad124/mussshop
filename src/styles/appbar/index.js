@@ -36,7 +36,7 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
   postion: "fixed",
   bottom: -10,
   left: 0,
-  // marginTop: "200px",
+  position: "absolute",
   width: "100%",
   alignItems: "center",
   zIndex: 99,

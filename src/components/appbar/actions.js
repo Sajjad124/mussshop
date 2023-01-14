@@ -6,6 +6,7 @@ import {
   ActionIconsContainerDesktop,
   ActionIconsContainerMobile,
 } from "../../styles/appbar";
+import { Colors } from "../../styles/theme";
 
 const Actions = ({ matches }) => {
   const Component = matches
@@ -15,7 +16,13 @@ const Actions = ({ matches }) => {
     <Component>
       <MyList type="row">
         <ListItemButton sx={{ justifyContent: "center" }}>
-          <ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
+          <ListItemIcon
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              color: matches && "white",
+            }}
+          >
             <ShoppingCart />
           </ListItemIcon>
         </ListItemButton>
