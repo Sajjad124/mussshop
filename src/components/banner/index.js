@@ -18,12 +18,12 @@ const Banner = () => {
       <BannerContent>
         <Typography variant="h6">Huge Collection</Typography>
         <BannerTitle variant="h2">New Bag</BannerTitle>
-        <BannerDescription variant="subtitle">
+        {/* <BannerDescription variant="subtitle">
           <Typography>
             sakjgfajshgfkhasgfjhasgfkjgaslkjgfasjkfhss
             jsdkjfvjdskjdsfjvdjfkfhjshbdvfsvfdjfvbfdfsakjgfajshgfkhasgfjhasgfkj
           </Typography>
-        </BannerDescription>
+        </BannerDescription> */}
       </BannerContent>
     </BannerContainer>
   );
