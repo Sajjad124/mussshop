@@ -39,7 +39,7 @@ export const BannerTitle = styled(Typography)(({ theme }) => ({
   fontSize: "72px",
   //   marginBottom: "20px",
   [theme.breakpoints.down("sm")]: {
-    fontSize: "42px",
+    fontSize: "30px",
   },
 }));
 
