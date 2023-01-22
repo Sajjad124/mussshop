@@ -11,6 +11,8 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
+    width: "100%",
+    height: "100%",
   },
 }));
 
