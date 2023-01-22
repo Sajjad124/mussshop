@@ -17,11 +17,9 @@ const Banner = () => {
       <BannerImage src="images/banner/new-bag.jpg" />
       <BannerContent>
         <Typography variant="h6">Huge Collection</Typography>
-        <BannerTitle variant="h2">New Bag</BannerTitle>
+        <BannerTitle variant="h5">New Bag</BannerTitle>
         <BannerDescription variant="subtitle">
-          <Typography>
-           This is a new Bag
-          </Typography>
+          <Typography>This is a new Bag</Typography>
         </BannerDescription>
       </BannerContent>
     </BannerContainer>
