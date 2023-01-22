@@ -21,8 +21,8 @@ export const BannerImage = styled("img")(({ src, theme }) => ({
     width: "250px",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "220px",
-    height: "200px",
+    width: "150px",
+    height: "130px",
   },
 }));
 
