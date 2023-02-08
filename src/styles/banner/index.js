@@ -1,62 +1,32 @@
 import { Box, styled, Typography } from "@mui/material";
-import { Colors } from "../theme";
+import { Colors } from "../theme/index";
 
 export const BannerContainer = styled(Box)(({ theme }) => ({
+  background: Colors.secondary,
   display: "flex",
-  justifyContent: "center",
-  width: "100%",
-  height: "100%",
-  padding: "0px 0px",
-  background: Colors.light_grey,
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    alignItems: "center",
-    width: "100%",
-    height: "100%",
-  },
+  flexWrap: "wrap",
+  gap: "2rem",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const BannerImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
-  width: "800px",
-  height: "400px",
-  marginLeft: "-250px",
-  // padding: "20px",
-  [theme.breakpoints.down("md")]: {
-    width: "250px",
-    marginLeft: "0px",
-  },
-  [theme.breakpoints.down("sm")]: {
-    width: "300px",
-    height: "130px",
-  },
+  [theme.breakpoints.down("md")]: { width: "100%" },
+  [theme.breakpoints.down("sm")]: { width: "100%" },
 }));
 
 export const BannerContent = styled(Box)(() => ({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  maxWidth: 420,
-  padding: "30px",
+  alignSelf: "center",
+  margin: "auto",
+  padding: "2rem",
 }));
 
 export const BannerTitle = styled(Typography)(({ theme }) => ({
-  lineHeight: 1.5,
-  fontSize: "72px",
-  // marginBottom: "20px",
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "30px",
-  },
+  textAlign: "center",
+  [theme.breakpoints.down("sm")]: {},
 }));
 
 export const BannerDescription = styled(Typography)(({ theme }) => ({
-  lineHeight: 1.25,
-  letterSpacing: 1.25,
-  // marginBottom: "3em",
-  [theme.breakpoints.down("md")]: {
-    lineHeight: 1.15,
-    letterSpacing: 1.15,
-    marginBottom: "1.5em",
-  },
+  textAlign: "center",
+  [theme.breakpoints.down("md")]: {},
 }));

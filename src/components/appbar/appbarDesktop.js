@@ -18,7 +18,7 @@ function AppBarDesktop({ matches }) {
     // <Component>
     <AppBarContainer>
       <AppBarHeader>Muss Shop</AppBarHeader>
-      <MyList type="row">
+      <MyList type="row" sx={{ cursor: "pointer" }}>
         <ListItemText primary="Home" />
         <ListItemText primary="Categories" />
         <ListItemText primary="Products" />
